@@ -1,0 +1,40 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/frame"
+        android:background="#ffeee9e2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rotation_degrees="15.5"
+        tools:context=".MyActivity" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_gravity="center_horizontal|bottom"
+                  android:layout_marginBottom="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/left"
+            android:layout_margin="30dp"
+            android:onClick="click"
+            android:background="@drawable/btn_dislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_margin="30dp"
+            android:onClick="click"
+            android:background="@drawable/btn_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</merge>
+
